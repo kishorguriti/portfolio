@@ -1,0 +1,26 @@
+
+.links-wrapper{
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+    gap: min(4rem , 4vw);
+
+    li{
+        list-style: none;
+    }
+
+    li a{
+        color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+}

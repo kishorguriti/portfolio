@@ -1,0 +1,37 @@
+$aboutBg:'../../Assets/cartoondevelopr.jpg';
+
+.intro-container {
+    display: flex;
+    background-image: url(#{$aboutBg});
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+    position: relative;
+
+::before{
+    content: '';
+    z-index: 1;
+    background-color:#5a5d5f17;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+    @media screen and (max-width:767px) {
+        background-size: contain !important;
+    }
+
+}
+
+
+
+
+
+
