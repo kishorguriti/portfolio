@@ -1,0 +1,80 @@
+$aboutBg:'../../Assets/cartoondevelopr5.png';
+@use '../../Styles/variable.scss' as variables;
+
+.intro-container {
+    display: flex;
+    background-image: url(#{$aboutBg});
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+    position: relative;
+    border-radius: 8px;
+
+    @media screen and (max-width:767px) {
+        height: 250px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-left: 24px;
+
+    }
+
+}
+
+
+
+.about-section{
+    position: absolute;
+    top:30vh;
+    
+.about-typo{
+    color: white;
+    font-size: 42px;
+    font-family: serif;
+    @media screen and (max-width:767px) {
+       font-size: 12px;
+    
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    top:14vh;
+
+}
+
+}
+
+.about-social-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    bottom: 8vh;
+
+    .social-icons-cont{
+        background-color:variables.$social-bg;
+        display: flex;
+        gap:3;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        padding: 6px 12px;
+        border-radius: 20px;
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        bottom: 5vh;
+    
+    }
+}
+
+
+
+
+
